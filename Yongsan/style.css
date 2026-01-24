@@ -1,0 +1,91 @@
+body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Pretendard', sans-serif;
+    }
+
+    .card .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    .card {
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+      background-color: #111;
+      height: 100%;
+
+      overflow: hidden;
+    }
+
+
+    /*.card:hover {
+      transform: translateY(-8px);
+      border-color: #fff;
+    }*/
+
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: inherit;
+    }
+
+    .card-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .card-titles {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+
+    }
+
+    .card-texts {
+      font-size: 0.85rem;
+      color: #000;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+
+    .btn-outline-warning {
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .card-body .btn {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+   
+    .main-title-img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .card .carousel,
+    .card .carousel-inner,
+    .card .carousel-item {
+      height: 220px;
+      /* 원하는 높이 */
+    }

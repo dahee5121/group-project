@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>용산구 메인</title>
+
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Pretendard', sans-serif;
+    }
+
+    .card .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    .card {
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+      background-color: #111;
+      height: 100%;
+
+      overflow: hidden;
+    }
+
+
+    /*.card:hover {
+      transform: translateY(-8px);
+      border-color: #fff;
+    }*/
+
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: inherit;
+    }
+
+    .card-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .card-titles {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+
+    }
+
+    .card-texts {
+      font-size: 0.85rem;
+      color: #000;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+
+    .btn-outline-warning {
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .card-body .btn {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+   
+    .main-title-img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .card .carousel,
+    .card .carousel-inner,
+    .card .carousel-item {
+      height: 220px;
+      /* 원하는 높이 */
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header style="background-color: #000; padding: 80px 0; text-align: center;">
+    <h1 style="color: #fff; font-size: 3rem; font-weight: 800; letter-spacing: 2px;">
+      THE SEOUL SELECTION
+    </h1>
+    <p style="color: #ccc; font-size: 1.2rem; margin-top: 10px;">
+      서울의 세 가지 색깔, 미식의 정점을 만나다
+    </p>
+  </header>
+
+  <!-- 카드 섹션 -->
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Yongsan-gu District</h1>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-6 col-lg-3 border-0 ">
+        <div class="card h-100 bg-white text-black border-0 ">
+
+          <div class="ratio ratio-16x9">
+            <div id="carouselTableFour" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./table four01.jpg" class="d-block w-100" alt="테이블포포">
+                </div>
+                <div class="carousel-item">
+                  <img src="./table four02.jpg" class="d-block w-100" alt="테이블포포">
+                </div>
+                <div class="carousel-item">
+                  <img src="./table four03.png" class="d-block w-100" alt="테이블포포">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselTableFour"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselTableFour"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-titles">테이블포포</h5><br>
+            <p class="card-texts">이탈리아<br>
+              테이블포포는 한남동의 파인다이닝 맛집으로, 태안에서 온 신선한 해산물과 채소를 활용한 런치·디너 코스를 제공합니다.<br>
+              특히 쫄깃한 오징어와 문어 라구, 삼식이 생선 요리 등 개성 있는 메뉴가 호평을 받고 있습니다</p>
+            <button type="button" class="btn btn-outline-dark">홈페이지 이동</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3 border-0">
+        <div class="card h-100 bg-white text-black border-0">
+
+          <div class="ratio ratio-16x9">
+            <div id="carouselSoul" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Soul01.jpg" class="d-block w-100" alt="소울">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Soul02.jpg" class="d-block w-100" alt="소울">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Soul03.jpg" class="d-block w-100" alt="소울">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSoul" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSoul" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-body ">
+            <h5 class="card-titles">소울SOUL</h5><br>
+            <p class="card-texts">한식<br>
+              소울은 해방촌의 숨은 보석 같은 한식 파인다이닝으로, 미쉐린 가이드 1스타를 획득한 곳입니다.<br>
+              런치 코스와 와인 페어링 메뉴가 인기 있으며, 특히 한입 요리와 디저트에서 독창적인 맛을 선보입니다.</p>
+            <button type="button" class="btn btn-outline-dark">홈페이지 이동</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 bg-black text-white">
+
+          <div id="carouselYun" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./윤주당01.jpg" class="d-block w-100" alt="윤주당">
+              </div>
+              <div class="carousel-item">
+                <img src="./윤주당02.jpg" class="d-block w-100" alt="윤주당">
+              </div>
+              <div class="carousel-item">
+                <img src="./윤주당03.jpg" class="d-block w-100" alt="윤주당">
+              </div>
+              <div class="carousel-item">
+                <img src="./윤주당04.jpg" class="d-block w-100" alt="윤주당">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselYun" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselYun" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body ">
+            <h5 class="card-title">윤주당</h5><br>
+            <p class="card-text">한식<br>
+              해방촌 윤주당은 전통주와 한식을 즐길 수 있는 아늑한 분위기의 술집입니다.<br>
+              테이스팅 코스인 주모의 한상과 다양한 전통주 페어링이 인기 메뉴입니다.<Br>
+              막창순대, 꽈리고추 목살구이, 들기름 국수 등 정성스러운 안주들이 맛과 품질 모두 우수하다는 평가를 받고 있습니다</p>
+            <button type="button" class="btn btn-outline-light">홈페이지 이동</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 bg-black text-white">
+
+          <div id="carouselBBQ" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./바베큐연구소장01.jpg" class="d-block w-100" alt="바베큐연구소장">
+              </div>
+              <div class="carousel-item">
+                <img src="./바베큐연구소장02.jpg" class="d-block w-100" alt="바베큐연구소장">
+              </div>
+              <div class="carousel-item">
+                <img src="./바베큐연구소장03.jpg" class="d-block w-100" alt="바베큐연구소장">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBBQ" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBBQ" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body ">
+            <h5 class="card-title">바베큐연구소장</h5><br>
+            <p class="card-text">육류,고기요리<br>
+              유용욱바베큐연구소는 고급 바베큐 코스를 프라이빗하게 즐길 수 있는 레스토랑입니다<br>
+              대표 메뉴인 스모크 바베큐 플래터는 다양한 부위의 고기를
+              특히 훈연 향이 배어있는 고기와 특제소스의 조화가 뛰어나며, 남은 음식은 포장해갈 수 있어 편리합니다.</p>
+            <button type="button" class="btn btn-outline-light">홈페이지 이동</button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
