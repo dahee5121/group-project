@@ -1,0 +1,147 @@
+.footer {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s;
+    margin-right: 20px;
+}
+
+.footer-link:last-child {
+    margin-right: 0;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.copyright-line1::after {
+    content: " ";
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+    .footer-links {
+        display: none !important;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .copyright-line1::after {
+        content: "";
+    }
+}
+
+
+   <style>
+        /* 푸터 전용 추가/수정 스타일 */
+        .footer {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: var(--dark);
+            border-top: 1px solid rgba(197, 160, 89, 0.15);
+            position: relative;
+        }
+
+        .ornament {
+            width: 400px;
+            /* 문양 크기를 살짝 키워 더 화려하게 */
+            margin: 0 auto 40px;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            /* 링크 사이 간격을 넓혀 고급스러움 강조 */
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            /* 화면 작아지면 자동으로 줄바꿈 */
+        }
+
+        .footer-link {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* 링크 사이의 구분점(Dot) 추가 (고급스러운 디테일) */
+        .footer-link:not(:last-child)::after {
+            content: '·';
+            position: absolute;
+            right: -22px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer-link:hover {
+            color: var(--gold);
+            text-shadow: 0 0 10px rgba(197, 160, 89, 0.4);
+        }
+
+        .footer-copyright {
+            color: #444;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .copyright-line1 {
+            display: block;
+            color: var(--gold);
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        /* 모바일 환경 대응 */
+        @media (max-width: 768px) {
+            .footer-links {
+                gap: 15px 25px;
+            }
+
+            .footer-link:not(:last-child)::after {
+                display: none;
+                /* 모바일에서는 구분점 제거 */
+            }
+
+            .ornament {
+                width: 250px;
+            }
+        }
+    </style>
