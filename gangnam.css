@@ -1,0 +1,149 @@
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   background-color: #000 !important;
+   font-family: 'Pretendard', sans-serif;
+   color: white;
+ }
+
+ .section-title {
+   color: #fff;
+   font-weight: bold;
+   margin-bottom: 3rem;
+   text-align: center;
+ }
+
+ /* 카드 기본 */
+ .card {
+   border: 1px solid #333;
+   transition: transform 0.3s ease;
+   height: 100%;
+   overflow: hidden;
+   background-color: #111;
+ }
+
+ /* 흰색 카드 */
+ .card.bg-white {
+   background-color: #fff;
+   color: #000;
+   border: 1px solid #ccc;
+ }
+
+ /* 검정 카드 */
+ .card.bg-black {
+   background-color: #111;
+   color: #fff;
+   border: 1px solid #666;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+ }
+
+/* 캐러셀 이미지 */
+.card .ratio {
+  height: 400px;
+}
+
+/* 검정 카드의 캐러셀 (ratio 클래스 없음) */
+.card.bg-black .carousel {
+  height: 400px;
+}
+
+.card .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card .carousel,
+.card .carousel-inner,
+.card .carousel-item {
+  height: 100%;
+}
+
+.card.bg-black .carousel-inner,
+.card.bg-black .carousel-item {
+  height: 100%;
+}
+
+ /* 카드 body */
+ .card-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+   padding: 1rem;
+   position: relative;
+   z-index: 2;
+   background-color: inherit;
+ }
+
+ /* 카드 타이틀 */
+ .cardtitles,
+ .card-title {
+   font-weight: bold;
+   font-size: 1.1rem;
+   margin-bottom: 0.5rem;
+   position: relative;
+   z-index: 3;
+   color: inherit;
+ }
+
+ .card.bg-white .cardtitles {
+   color: #000;
+ }
+
+ .card.bg-black .cardtitles,
+ .card.bg-black .card-title {
+   color: #fff;
+ }
+
+ /* 카드 텍스트 */
+ .card-texts,
+ .card-text {
+   font-size: 0.85rem;
+   margin-bottom: 1rem;
+   flex-grow: 1;
+   color: inherit;
+ }
+
+ /* 버튼스타일일 */
+ .card-body .btn {
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+ }
+
+ .btn-outline-dark,
+ .btn-outline-light {
+   border-radius: 20px;
+   font-size: 0.8rem;
+ }
+
+ /* 메인 이미지 */
+ .main-title-img {
+   height: 100%;
+   object-fit: cover;
+   object-position: center center;
+ }
+
+ /* 메인 헤더 */
+ .main-header {
+   background-color: #000;
+   padding: 80px 0;
+   text-align: center;
+ }
+
+ .main-title {
+   color: #fff;
+   font-size: 3rem;
+   font-weight: 800;
+   letter-spacing: 2px;
+ }
+
+ .main-subtitle {
+   color: #ccc;
+   font-size: 1.2rem;
+   margin-top: 10px;
+ }
