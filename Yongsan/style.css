@@ -1,91 +1,116 @@
-body {
-      margin: 0;
-      background-color: #000;
-      color: white;
-      font-family: 'Pretendard', sans-serif;
-    }
+ /* 전체 페이지 배경 */
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   background-color: #000 !important;
+   font-family: 'Pretendard', sans-serif;
+   color: white;
+ }
 
-    .card .carousel-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+ .section-title {
+   color: #fff;
+   font-weight: bold;
+   margin-bottom: 3rem;
+   text-align: center;
+ }
 
+ /* 카드 기본 */
+ .card {
+   border: 1px solid #333;
+   transition: transform 0.3s ease;
+   height: 100%;
+   overflow: hidden;
+   background-color: #111;
+ }
 
-    .card {
-      border: 1px solid #333;
-      transition: transform 0.3s ease;
-      background-color: #111;
-      height: 100%;
+ /* 흰색 카드 */
+ .card.bg-white {
+   background-color: #fff;
+   color: #000;
+   border: 1px solid #ccc;
+ }
 
-      overflow: hidden;
-    }
+ /* 검정 카드 */
+ .card.bg-black {
+   background-color: #111;
+   color: #fff;
+   border: 1px solid #666;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+ }
 
+ /* 캐러셀 이미지 */
+ .card .carousel-item img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   display: block;
+ }
 
-    /*.card:hover {
-      transform: translateY(-8px);
-      border-color: #fff;
-    }*/
+ .card .carousel,
+ .card .carousel-inner,
+ .card .carousel-item {
+   height: 180px;
+ }
 
+ /* 카드 body */
+ .card-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+   padding: 1rem;
+   position: relative;
+   z-index: 2;
+   background-color: inherit;
+ }
 
-    .card-body {
-      display: flex;
-      flex-direction: column;
-      color: white;
-      text-align: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      background-color: inherit;
-    }
+ /* 카드 타이틀 */
+ .cardtitles,
+ .card-title {
+   font-weight: bold;
+   font-size: 1.1rem;
+   margin-bottom: 0.5rem;
+   position: relative;
+   z-index: 3;
+   color: inherit;
+ }
 
-    .card-title {
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
+ .card.bg-white .cardtitles {
+   color: #000;
+ }
 
-    .card-titles {
-      color: #000;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
+ .card.bg-black .cardtitles,
+ .card.bg-black .card-title {
+   color: #fff;
+ }
 
-    .card-text {
-      font-size: 0.85rem;
-      color: #fff;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
+ /* 카드 텍스트 */
+ .card-texts,
+ .card-text {
+   font-size: 0.85rem;
+   margin-bottom: 1rem;
+   flex-grow: 1;
+   color: inherit;
+ }
 
-    }
+ /* 버튼스타일일 */
+ .card-body .btn {
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+ }
 
-    .card-texts {
-      font-size: 0.85rem;
-      color: #000;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
+ .btn-outline-dark,
+ .btn-outline-light {
+   border-radius: 20px;
+   font-size: 0.8rem;
+ }
 
-
-    .btn-outline-warning {
-      border-radius: 20px;
-      font-size: 0.8rem;
-    }
-
-    .card-body .btn {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-   
-    .main-title-img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-    .card .carousel,
-    .card .carousel-inner,
-    .card .carousel-item {
-      height: 220px;
-      /* 원하는 높이 */
-    }
+ /* 메인 이미지 */
+ .main-title-img {
+   height: 100%;
+   object-fit: cover;
+   object-position: center center;
+ }
